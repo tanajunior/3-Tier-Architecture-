@@ -54,5 +54,32 @@ Before you start, ensure you have:
    gcloud auth login
    gcloud config set project <PROJECT_ID>
 
+# Full Stack Mini Project – React + Flask + PostgreSQL
+## Continuation of Three-Tier Architecture with Terraform (GCP)
+
+## 📌 Overview
+
+This project is a Full Stack Mini App built as a hands-on continuation of the Three-Tier Architecture on GCP using Terraform.
+It demonstrates how a frontend (React), backend (Flask), and database (PostgreSQL) work together in a modular 3-tier setup.
+
+Frontend: React (Node.js) – Displays users in a simple table.
+Backend: Flask (Python) – REST API to serve data from the database.
+Database: PostgreSQL – Stores user records.
+This mirrors the Three-Tier Architecture concept:
+Presentation Layer (React) – Client UI
+
+Application Layer (Flask) – API logic
+Data Layer (PostgreSQL) – Persistent storage
+
+## ⚡ Prerequisites
+Before running locally, install:
+Node.js
+ (>= 18.x)
+Python
+ (>= 3.9)
+PostgreSQL
+ (>= 14)
+
+OR use Docker for containerized setup
 
 
