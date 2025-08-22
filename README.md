@@ -54,6 +54,64 @@ Before you start, ensure you have:
    gcloud auth login
    gcloud config set project <PROJECT_ID>
 
+🚀 Setup & Deployment
+1. Clone the Repo
+git clone https://github.com/<your-username>/gcp-three-tier-terraform.git
+cd gcp-three-tier-terraform
+
+2. Initialize Terraform
+   ```bash
+terraform init
+
+3. Plan the Infrastructure
+   ```bash
+terraform plan -var="project_id=<YOUR_PROJECT_ID>" -out=tfplan
+
+
+4. Apply the Infrastructure
+   ```bash
+terraform apply "tfplan"
+
+
+Terraform will provision:
+
+VPC + subnets
+Cloud NAT
+Managed Instance Group + Load Balancer
+Cloud SQL instance
+
+🖥️ How to Access
+Frontend / Load Balancer
+Terraform outputs the external IP of the Load Balancer
+
+Access it via:
+
+terraform output load_balancer_ip
+Open in your browser: http://<LB_IP>
+PICTURE
+
+
+Database
+Accessible only from inside the private subnet
+Connect using Cloud SQL Auth proxy or a Bastion host
+
+📊 Monitoring
+Logs: Cloud Logging Console
+Metrics: Cloud Monitoring Console
+
+🧹 Teardown
+
+When done, clean up resources:
+ ```bash
+terraform destroy
+
+Terraform Apply Success
+
+Load Balancer serving app
+Cloud SQL Instance in Console
+
+
+
 # Full Stack Mini Project – React + Flask + PostgreSQL
 ## Continuation of Three-Tier Architecture with Terraform (GCP)
 
