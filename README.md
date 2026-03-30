@@ -138,7 +138,7 @@ Python
 PostgreSQL
  (>= 14)
 
-OR use Docker for containerized setup
+OR use Docker for containerized setup.
 
 
 
