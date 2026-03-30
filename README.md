@@ -15,11 +15,11 @@
 
 This project was built to demonstrate real-world DevOps and cloud engineering skills:
 
-- **Infrastructure as Code** — 100% Terraform, no manual console clicks
-- **Network security** — private subnets, Cloud NAT, no public DB exposure
-- **Scalability** — Managed Instance Groups with autoscaling policies
-- **Modularity** — reusable Terraform modules for network, compute, and database tiers
-- **Observability** — Cloud Monitoring and Logging integrated from day one
+- **Infrastructure as Code** - 100% Terraform, no manual console clicks
+- **Network security** - private subnets, Cloud NAT, no public DB exposure
+- **Scalability** - Managed Instance Groups with autoscaling policies
+- **Modularity** - reusable Terraform modules for network, compute, and database tiers
+- **Observability** - Cloud Monitoring and Logging integrated from day one
 
 ---
 
